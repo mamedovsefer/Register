@@ -1,0 +1,56 @@
+﻿@model Register.Models.REGISTRATION
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>İT-ni bizimlə öyrən</title>
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet">
+
+    <script src="~/Content/js/bootstrap.js"></script>
+
+</head>
+<body>
+
+
+    <div class="container">
+        <h2>Qeydiyyat</h2>
+        <form method="post" action="/Home/Register">
+            <div class="form-group">
+                <label for="name">Ad:</label>
+                <input type="text" class="form-control" name="NAME" placeholder="Adınız">
+            </div>
+            <div class="form-group">
+                <label for="surename">Soyad</label>
+                <input type="text" class="form-control" name="SURNAME" placeholder="Soyadınız">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" name="EMAIL" placeholder="Email-i daxil edin">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" name="PASSWORD" placeholder="Şifrəni daxil edin">
+                <label>
+                    <input type="radio" name="GENDER" value="M">
+                    Kişi
+                </label>
+                <label>
+                    <input type="radio" name="GENDER" value="F">
+                    Qadın
+                </label>
+                <button type="submit" class="btn btn-default id="btn1" onclick="">Qeydiyyatdan kec</button>
+            </div>
+            <h1>@ViewBag.Message</h1>
+        </form>
+    </div>
+    <script>
+      
+    </script>
+</body>
+</html>
+

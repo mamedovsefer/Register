@@ -1,0 +1,40 @@
+﻿@model Register.Models.REGISTRATION
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>İT-ni bizimlə öyrən</title>
+
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet">
+    <script src="~/Content/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+
+
+    <div class="container">
+        <h2>Daxil ol</h2>
+        <form method="post" action="/Home/Singin">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" name="EMAIL" placeholder="Email-i daxil edin">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" name="PASSWORD" placeholder="Şifrəni daxil edin">
+
+                <button type="submit" class="btn btn-default">Daxil ol</button>
+                <button type="submit" class="btn btn-default">@Html.ActionLink("Qeydiyyat", "Register", "Home")</button>
+            </div>
+            <h1>@ViewBag.Message</h1>
+        </form>
+        <script>
+           
+        </script>
+    </div>
+</body>
+</html>

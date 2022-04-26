@@ -1,0 +1,68 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>İT-ni bizimlə öyrən</title>
+
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Delius+Unicase|Teko" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Francois+One|Nova+Oval|Ranga" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monofett" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Chicle|Eater|Monofett" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Faster+One" rel="stylesheet">
+    <script src="~/Content/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li role="presentation" class="active"><a href="#">Ana səhifə</a></li>
+            <li role="presentation"><a href="#">HTML</a></li>
+            <li role="presentation"><a href="#">CSS </a></li>
+            <li role="presentation"><a href="#">JavaScript </a></li>
+            <li role="presentation"><a href="#">Python</a></li>
+            <li role="presentation">@Html.ActionLink("Qeydiyyat", "Register", "Home")</li>
+            <li role="presentation">@Html.ActionLink("Daxil Ol", "Singin", "Home")</li>
+            <div id="custom-search-input">
+                <div class="input-group " style="margin-top:  22px;">
+                    <input type="text" class="  search-query form-control" placeholder="Axtar" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-danger" type="button">
+                            <span class=" glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+
+        </ul>
+        <hr>
+        <h1 align="center"> Hər şeyi kodlaşdırmaq üçün gec deyil!</h1>
+
+        <div class="row" style="margin-top: 25px">
+            <div class="col-md-3">
+                <img src="~/Content/img/pic1.png"><h3 float:left style="margin-bottom:10px"> Dərs proqramı</h3> <p>HTML dərsləri bizim peşakər müəllim heyəti tərəfindən keçirilir.Bu dərslər 3 həftə ərzində keçirilir həmçinin 3 həftənin sonunda online imtahan keçirilir.</p>
+            </div>
+            <div class="col-md-3">  <img src="~/Content/img/pic2.png"> <h3 float:left style="margin-bottom:10px"> Dərs proqramı</h3> <p>CSS dərsləri bizim peşakər müəllim heyəti tərəfindən keçirilir.Bu dərslər 5 həftə ərzində keçirilir həmçinin 5 həftənin sonunda online imtahan keçirilir.</p></div>
+            <div class="col-md-3">  <img src="~/Content/img/pic3.png"> <h3 float:left style="margin-bottom:10px"> Dərs proqramı</h3> <p>Javascript dərsləri bizim peşakər müəllim heyəti tərəfindən keçirilir.Bu dərslər 5 həftə ərzində keçirilir həmçinin 5 həftənin sonunda online imtahan keçirilir.</p></div>
+            <div class="col-md-3">  <img src="~/Content/img/pic4.png"> <h3 float:left style="margin-bottom:10px"> Dərs proqramı</h3> <p>Python dərsləri bizim peşakər müəllim heyəti tərəfindən keçirilir.Bu dərsləri 6 həftə ərzində keçirilir həmçinin 6 həftənin sonunda online imtahan keçirilir.</p></div>
+        </div>
+        <hr>
+        <ul class="nav nav-pills">
+            <li role="presentation" class="active"><a href="#">İT xəbərlər</a></li>
+            <li role="presentation"><a href="#"> Online dərslər</a></li>
+            <li role="presentation"><a href="#">  Müəllim heyəti</a></li>
+            <li role="presentation"><a href="#"> Filiallarımız</a></li>
+            <li role="presentation"><a href="#">Multimedia</a></li>
+
+        </ul>
+    </div>
+    <h2>@ViewBag.Message</h2>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
